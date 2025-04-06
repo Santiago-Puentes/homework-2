@@ -33,7 +33,6 @@ void course::printOrdenAlfabético(vector<shared_ptr<student>> students) {
         return a < b;
     });
 
-    // Print the sorted list of students
     for (const auto& st : students) {
         cout << *st << endl;
     }

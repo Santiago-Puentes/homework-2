@@ -11,9 +11,8 @@ class course {
         course(vector<shared_ptr<student>> studentsVec) : students(studentsVec) {}
         // Constructor de copia
         course(const course& other) : students(other.students) {
-        // Justificación:
         // Este constructor realiza una copia superficial del vector `students`.
-        // Dado que `students` utiliza `std::shared_ptr`, los punteros a los objetos
+        // Dado que `students` utiliza shared pointers, los punteros a los objetos
         // `student` son compartidos entre el curso original y la copia. Esto es eficiente
         // en términos de memoria, ya que no se duplican los objetos `student`.
         }
@@ -22,9 +21,8 @@ class course {
         course& operator=(const course& other) {
             if (this != &other) {
                 students = other.students;
-                // Justificación:
                 // Similar al constructor de copia, el operador de asignación realiza
-                // una copia superficial del vector `students`. Los `std::shared_ptr`
+                // una copia superficial del vector `students`. Los shared pointers
                 // aseguran que los objetos `student` sean compartidos entre las instancias.
             }
         return *this;
