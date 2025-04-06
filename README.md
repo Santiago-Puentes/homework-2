@@ -4,9 +4,9 @@
 2. escribí el comando "make" junto con el número de ejercicio que quieras correr
 
 ## Ejemplo con el ejercicio 1:
-´´´bash
+```bash
 cd homework-2/
-´´´
-´´´bash
+```
+```bash
 make 1
-´´´
+```
